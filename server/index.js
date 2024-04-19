@@ -50,12 +50,17 @@ app.use("/api/v1/course", CourseRoutes);
 
 app.use("/api/v1/contact", require("./routes/ContactUs"));
 
+// Testing the server
 app.get("/", (req, res) => {
-  res.status(200).json({
-    message: "Welcome to the API",
+  return res.json({
+    success: true,
+    message: "Your server is up and running ...",
   });
 });
 
+// Listening to the server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`App is listening at ${PORT}`);
 });
+
+// End of code.
