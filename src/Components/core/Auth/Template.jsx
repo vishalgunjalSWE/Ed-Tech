@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
-// eslint-disable-next-line no-unused-vars
-import { FcGoogle } from "react-icons/fc";
-import { useSelector } from "react-redux";
-
-import frameImg from "../../../assets/Images/frame.png";
-import LoginForm from "./LoginForm";
-import SignupForm from "./SignupForm";
-
-function Template({ title, description1, description2, image, formType }) {
-  const { loading } = useSelector((state) => state.auth);
-<<<<<<< HEAD
-=======
 import { FcGoogle } from "react-icons/fc"
 import { useSelector } from "react-redux"
 
@@ -23,9 +7,6 @@ import SignupForm from "./SignupForm"
 
 function Template({ title, description1, description2, image, formType }) {
   const { loading } = useSelector((state) => state.auth)
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main
 
   return (
     <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
@@ -65,20 +46,7 @@ function Template({ title, description1, description2, image, formType }) {
         </div>
       )}
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
-  );
-}
-
-export default Template;
-<<<<<<< HEAD
-=======
   )
 }
 
 export default Template
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main

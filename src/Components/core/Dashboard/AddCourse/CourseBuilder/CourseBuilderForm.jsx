@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* eslint-disable no-unused-vars */
-=======
->>>>>>> 400eb95 (Up)
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> origin/main
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -49,26 +41,12 @@ const CourseBuilderForm = () => {
     register,
     handleSubmit,
     setValue,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     getValues,
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main
     formState: { errors },
   } = useForm();
 
   const onSubmit = async (data) => {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    let result = null;
-=======
     let result=null;
->>>>>>> 400eb95 (Up)
-=======
-    let result = null;
->>>>>>> origin/main
     setLoading(true);
     if (editSectionName) {
       result = await updateSection(
@@ -97,19 +75,9 @@ const CourseBuilderForm = () => {
     setLoading(false);
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const handelChangeEditSectionName = (sectionId, sectionName) => {
-    if (editSectionName === sectionId) {
-=======
 
   const handelChangeEditSectionName = (sectionId,sectionName) => {
     if (editSectionName===sectionId) {
->>>>>>> 400eb95 (Up)
-=======
-  const handelChangeEditSectionName = (sectionId, sectionName) => {
-    if (editSectionName === sectionId) {
->>>>>>> origin/main
       setEditSectionName(false);
       setValue("sectionName", "");
       return;
@@ -133,19 +101,7 @@ const CourseBuilderForm = () => {
           {...register("sectionName", { required: true })}
         />
         {errors.sectionName && (
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <p className="ml-2 text-xs tracking-wide text-pink-200">
-            This field is required
-          </p>
-=======
           <p className="ml-2 text-xs tracking-wide text-pink-200">This field is required</p>
->>>>>>> 400eb95 (Up)
-=======
-          <p className="ml-2 text-xs tracking-wide text-pink-200">
-            This field is required
-          </p>
->>>>>>> origin/main
         )}
         <div className="flex items-end gap-x-4">
           <button
@@ -171,19 +127,7 @@ const CourseBuilderForm = () => {
           )}
         </div>
       </form>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      {course.courseContent.length > 0 && (
-        <NestedView handelChangeEditSectionName={handelChangeEditSectionName} />
-      )}
-=======
       {course.courseContent.length > 0 && <NestedView handelChangeEditSectionName={handelChangeEditSectionName} />}
->>>>>>> 400eb95 (Up)
-=======
-      {course.courseContent.length > 0 && (
-        <NestedView handelChangeEditSectionName={handelChangeEditSectionName} />
-      )}
->>>>>>> origin/main
       <div className="flex justify-end gap-x-3">
         <button
           onClick={() => {

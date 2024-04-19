@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* eslint-disable no-unused-vars */
-=======
->>>>>>> 400eb95 (Up)
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> origin/main
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -19,19 +11,11 @@ import InstructorSection from "../Components/core/HomePage/InstructorSection";
 import ExploreMore from "../Components/core/HomePage/ExploreMore";
 import { useDispatch } from "react-redux";
 import { setProgress } from "../slices/loadingBarSlice";
-<<<<<<< HEAD
-<<<<<<< HEAD
-import RatingSlider from "../Components/core/Ratings/RatingSlider";
-=======
 import { getCatalogaPageData } from "../services/operations/pageAndComponentData";
 import CourseSlider from "../Components/core/Catalog/CourseSlider";
 import Spinner from "../Components/common/Spinner";
 import RatingSlider from "../Components/core/Ratings/RatingSlider";
 import ReviewSlider from "../Components/common/ReviewSlider";
->>>>>>> 400eb95 (Up)
-=======
-import RatingSlider from "../Components/core/Ratings/RatingSlider";
->>>>>>> origin/main
 import { motion } from "framer-motion";
 import { fadeIn } from "./../Components/common/motionFrameVarients";
 
@@ -61,23 +45,10 @@ function Home() {
 
         {/* Heading */}
         <motion.div
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
           variants={fadeIn("left", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, threshold: 0.1 }}
-<<<<<<< HEAD
-=======
-          variants={fadeIn("left", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, threshold: 0.5 }}
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main
           className="text-center text-3xl lg:text-4xl font-semibold mt-7"
         >
           Empower Your Future with
@@ -85,23 +56,10 @@ function Home() {
         </motion.div>
 
         <motion.div
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
           variants={fadeIn("right", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, threshold: 0.1 }}
-<<<<<<< HEAD
-=======
-          variants={fadeIn("right", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, threshold: 0.5 }}
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main
           className="mt-4 w-[90%] text-center text-base lg:text-lg font-bold text-richblack-300"
         >
           With our online coding courses, you can learn at your own pace, from

@@ -1,14 +1,6 @@
 import React from "react";
 import ContactUsForm from "../Components/contactUs/ContactUsForm";
 import RatingSlider from "../Components/core/Ratings/RatingSlider";
-<<<<<<< HEAD
-<<<<<<< HEAD
-// eslint-disable-next-line no-unused-vars
-=======
->>>>>>> 400eb95 (Up)
-=======
-// eslint-disable-next-line no-unused-vars
->>>>>>> origin/main
 import ReviewSlider from "../Components/common/ReviewSlider";
 import HighlightText from "../Components/core/HomePage/HighlightText";
 

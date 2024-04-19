@@ -6,14 +6,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  // eslint-disable-next-line no-unused-vars
-=======
->>>>>>> 400eb95 (Up)
-=======
-  // eslint-disable-next-line no-unused-vars
->>>>>>> origin/main
   Autoplay,
   FreeMode,
   Navigation,

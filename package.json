@@ -8,14 +8,6 @@
     "axios": "^1.6.0",
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.0.1",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "env-cmd": "^10.1.0",
-=======
->>>>>>> 400eb95 (Up)
-=======
-    "env-cmd": "^10.1.0",
->>>>>>> origin/main
     "framer-motion": "^11.0.22",
     "openai": "^4.29.1",
     "react": "^18.2.0",

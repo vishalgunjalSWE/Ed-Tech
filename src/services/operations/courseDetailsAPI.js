@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* eslint-disable no-unused-vars */
-=======
->>>>>>> 400eb95 (Up)
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> origin/main
 import { toast } from "react-hot-toast";
 import { setProgress } from "../../slices/loadingBarSlice";
 

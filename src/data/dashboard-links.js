@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* eslint-disable no-dupe-keys */
-=======
->>>>>>> 400eb95 (Up)
-=======
-/* eslint-disable no-dupe-keys */
->>>>>>> origin/main
 import { ACCOUNT_TYPE } from "../utils/constants";
 export const sidebarLinks = [
   {

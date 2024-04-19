@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* eslint-disable no-unused-vars */
-=======
->>>>>>> 400eb95 (Up)
-=======
-/* eslint-disable no-unused-vars */
->>>>>>> origin/main
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
@@ -65,28 +57,7 @@ const CourseInformationForm = () => {
     }
 
     getCategories();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/main
-  }, [
-    course.category,
-    course.courseDescription,
-    course.courseName,
-    course.instructions,
-    course.price,
-    course.tag,
-    course.thumbnail,
-    course.whatYouWillLearn,
-    editCourse,
-    setValue,
-  ]);
-<<<<<<< HEAD
-=======
   }, []);
->>>>>>> 400eb95 (Up)
-=======
->>>>>>> origin/main
 
   const isFormUpdated = () => {
     const currentValues = getValues();
@@ -155,19 +126,7 @@ const CourseInformationForm = () => {
       } else {
         toast.error("NO Changes made so far");
       }
-<<<<<<< HEAD
-<<<<<<< HEAD
-      // eslint-disable-next-line no-use-before-define
       console.log("PRINTING FORMDATA", formData);
-      // eslint-disable-next-line no-use-before-define
-=======
-      console.log("PRINTING FORMDATA", formData);
->>>>>>> 400eb95 (Up)
-=======
-      // eslint-disable-next-line no-use-before-define
-      console.log("PRINTING FORMDATA", formData);
-      // eslint-disable-next-line no-use-before-define
->>>>>>> origin/main
       console.log("PRINTING result", result);
 
       return;
