@@ -1,0 +1,233 @@
+<<<<<<< HEAD
+Entity Relationship Diagram (ERD) for StudyNotion:
+User:
+
+Attributes: UserID (Primary Key), Username, Email, Password, Role
+Relationships:
+One user can have multiple roles (Student, Instructor, Administrator).
+One user can enroll in multiple courses.
+One user can create multiple courses (if an instructor).
+Course:
+
+Attributes: CourseID (Primary Key), Title, Description, InstructorID (Foreign Key), Category, Price, Rating
+Relationships:
+One course can have only one instructor.
+One course can have multiple enrolled students.
+One course can have multiple sections (e.g., modules, chapters).
+Section:
+
+Attributes: SectionID (Primary Key), CourseID (Foreign Key), Title, Description
+Relationships:
+One section belongs to one course.
+One section can have multiple lessons or content items.
+Lesson:
+
+Attributes: LessonID (Primary Key), SectionID (Foreign Key), Title, Type (e.g., video, document, quiz)
+Relationships:
+One lesson belongs to one section.
+One lesson can have multiple resources (e.g., video links, document files).
+Enrollment:
+
+Attributes: EnrollmentID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), EnrollmentDate
+Relationships:
+One enrollment belongs to one user and one course.
+One user can enroll in multiple courses.
+Rating:
+
+Attributes: RatingID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), RatingValue, Review
+Relationships:
+One rating is given by one user for one course.
+One course can have multiple ratings.
+Payment:
+
+Attributes: PaymentID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), Amount, PaymentDate
+Relationships:
+One payment is made by one user for one course.
+One course can have multiple payments.
+Additional Considerations:
+Media Content: Depending on the platform's requirements, additional entities such as media files (e.g., videos, documents) may be included in the ERD to manage course content effectively.
+
+Authentication and Authorization: While not explicitly represented in the ERD, user authentication and authorization mechanisms are essential components of the system's functionality, ensuring secure access to user accounts and resources.
+
+Normalization: Ensure that the ERD follows normalization principles to minimize redundancy and maintain data integrity.
+
+By representing these entities and their relationships in the ERD, the StudyNotion system can effectively model the data structure and relationships required to support the platform's functionalities, facilitating efficient data management and system operations.
+
+User
+---------------------
+UserID (PK)
+Username
+Email
+Password
+Role
+---------------------
+
+Course
+---------------------
+CourseID (PK)
+Title
+Description
+InstructorID (FK)
+Category
+Price
+Rating
+---------------------
+
+Section
+---------------------
+SectionID (PK)
+CourseID (FK)
+Title
+Description
+---------------------
+
+Lesson
+---------------------
+LessonID (PK)
+SectionID (FK)
+Title
+Type
+---------------------
+
+Enrollment
+---------------------
+EnrollmentID (PK)
+UserID (FK)
+CourseID (FK)
+EnrollmentDate
+---------------------
+
+Rating
+---------------------
+RatingID (PK)
+UserID (FK)
+CourseID (FK)
+RatingValue
+Review
+---------------------
+
+Payment
+---------------------
+PaymentID (PK)
+UserID (FK)
+CourseID (FK)
+Amount
+PaymentDate
+---------------------
+=======
+Entity Relationship Diagram (ERD) for StudyNotion:
+User:
+
+Attributes: UserID (Primary Key), Username, Email, Password, Role
+Relationships:
+One user can have multiple roles (Student, Instructor, Administrator).
+One user can enroll in multiple courses.
+One user can create multiple courses (if an instructor).
+Course:
+
+Attributes: CourseID (Primary Key), Title, Description, InstructorID (Foreign Key), Category, Price, Rating
+Relationships:
+One course can have only one instructor.
+One course can have multiple enrolled students.
+One course can have multiple sections (e.g., modules, chapters).
+Section:
+
+Attributes: SectionID (Primary Key), CourseID (Foreign Key), Title, Description
+Relationships:
+One section belongs to one course.
+One section can have multiple lessons or content items.
+Lesson:
+
+Attributes: LessonID (Primary Key), SectionID (Foreign Key), Title, Type (e.g., video, document, quiz)
+Relationships:
+One lesson belongs to one section.
+One lesson can have multiple resources (e.g., video links, document files).
+Enrollment:
+
+Attributes: EnrollmentID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), EnrollmentDate
+Relationships:
+One enrollment belongs to one user and one course.
+One user can enroll in multiple courses.
+Rating:
+
+Attributes: RatingID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), RatingValue, Review
+Relationships:
+One rating is given by one user for one course.
+One course can have multiple ratings.
+Payment:
+
+Attributes: PaymentID (Primary Key), UserID (Foreign Key), CourseID (Foreign Key), Amount, PaymentDate
+Relationships:
+One payment is made by one user for one course.
+One course can have multiple payments.
+Additional Considerations:
+Media Content: Depending on the platform's requirements, additional entities such as media files (e.g., videos, documents) may be included in the ERD to manage course content effectively.
+
+Authentication and Authorization: While not explicitly represented in the ERD, user authentication and authorization mechanisms are essential components of the system's functionality, ensuring secure access to user accounts and resources.
+
+Normalization: Ensure that the ERD follows normalization principles to minimize redundancy and maintain data integrity.
+
+By representing these entities and their relationships in the ERD, the StudyNotion system can effectively model the data structure and relationships required to support the platform's functionalities, facilitating efficient data management and system operations.
+
+User
+---------------------
+UserID (PK)
+Username
+Email
+Password
+Role
+---------------------
+
+Course
+---------------------
+CourseID (PK)
+Title
+Description
+InstructorID (FK)
+Category
+Price
+Rating
+---------------------
+
+Section
+---------------------
+SectionID (PK)
+CourseID (FK)
+Title
+Description
+---------------------
+
+Lesson
+---------------------
+LessonID (PK)
+SectionID (FK)
+Title
+Type
+---------------------
+
+Enrollment
+---------------------
+EnrollmentID (PK)
+UserID (FK)
+CourseID (FK)
+EnrollmentDate
+---------------------
+
+Rating
+---------------------
+RatingID (PK)
+UserID (FK)
+CourseID (FK)
+RatingValue
+Review
+---------------------
+
+Payment
+---------------------
+PaymentID (PK)
+UserID (FK)
+CourseID (FK)
+Amount
+PaymentDate
+---------------------
+>>>>>>> origin/main
