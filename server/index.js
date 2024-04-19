@@ -17,7 +17,7 @@ const { cloudnairyconnect } = require("./config/cloudinary");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 database.connect();
 
 app.use(express.json());
@@ -25,9 +25,8 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: JSON.parse(process.env.CORS_ORIGIN),
+    origin: "*",
     credentials: true,
-    maxAge: 14400,
   })
 );
 
