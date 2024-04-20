@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0 hidden md:block">
+            <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Plans
               </h1>
@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
 
           {/* Section 2 */}
-          <div className="lg:w-[50%] md:flex flex-wrap flex-row justify-between pl-3 lg:pl-5 gap-3 hidden">
+          <div className="lg:w-[50%] flex flex-wrap flex-row justify-between pl-3 lg:pl-5 gap-3">
             {FooterLink2.map((ele, i) => {
               return (
                 <div key={i} className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
@@ -174,10 +174,17 @@ const Footer = () => {
 
           <div className="text-left font-semibold">
             Developed by{" "}
-            <a href="https://www.linkedin.com/in/vishalgunjal-" target="_blank">
-              Vishal D. Gunjal
+            <a
+              href="https://vishalgunjalswe.vercel.app/"
+              target="_blank"
+              class="underline hover:text-richblack-50 transition-all duration-200 animate-pulse font-bold"
+              rel="noreferrer"
+            >
+              <span class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-100 text-transparent bg-clip-text">
+                Vishal D. Gunjal
+              </span>
             </a>
-            , © 2024 StudyNotion - Empowering Education
+            , © 2024
             <br />A proficient S.Y MCA Student at MES's Institute of Management
             and Career Courses, Pune.
           </div>
