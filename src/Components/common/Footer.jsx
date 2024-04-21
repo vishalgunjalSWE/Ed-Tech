@@ -180,7 +180,7 @@ const Footer = () => {
               class="underline hover:text-richblack-50 transition-all duration-200 animate-pulse font-bold"
               rel="noreferrer"
             >
-              <span class="bg-gradient-to-r from-yellow-400 via-yellow-100 to-yellow-100 text-transparent bg-clip-text">
+              <span class="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white bg-clip-text">
                 Vishal D. Gunjal
               </span>
             </a>

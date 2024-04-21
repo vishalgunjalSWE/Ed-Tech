@@ -13,11 +13,11 @@ import Footer from "../Components/common/Footer";
 import RatingSlider from "../Components/core/Ratings/RatingSlider";
 import ReviewSlider from "../Components/common/ReviewSlider";
 import { fadeIn } from "../Components/common/motionFrameVarients";
+import HighlightText1 from "../Components/core/HomePage/HighlightText1";
 
 const About = () => {
   return (
-    <div className="mx-auto text-white">
-      {/* section 1 */}
+    <div>
       <section className="bg-richblack-700">
         <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
           <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">
@@ -32,14 +32,12 @@ const About = () => {
           </header>
           <div className="sm:h-[70px] lg:h-[150px]"></div>
           <div className="absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5">
-            <img src={BannerImage1} />
-            <img src={BannerImage2} />
-            <img src={BannerImage3} />
+            <img src={BannerImage1} alt="" />
+            <img src={BannerImage2} alt="" />
+            <img src={BannerImage3} alt="" />
           </div>
         </div>
       </section>
-
-      {/* section 2 */}
 
       <section className="border-b border-richblack-700">
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-richblack-500">
@@ -48,11 +46,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* section 3 */}
-
       <section>
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-richblack-500">
-          {/* foudning story wala div */}
           <div className="flex flex-col items-center gap-10 lg:flex-row justify-between ">
             {/* founding story left box */}
             <motion.div
@@ -97,10 +92,7 @@ const About = () => {
               />
             </motion.div>
           </div>
-
-          {/* vision and mission wala parent div */}
           <div className="flex flex-col items-center lg:gap-10 lg:flex-row justify-between">
-            {/* left box */}
             <div className="my-24 flex lg:w-[40%] flex-col gap-10">
               <h1 className="bg-gradient-to-b from-[#FF512F] to-[#F09819] bg-clip-text text-4xl font-semibold text-transparent lg:w-[70%] ">
                 Our Vision
@@ -114,8 +106,6 @@ const About = () => {
                 dynamic and interactive learning experience.
               </p>
             </div>
-
-            {/* right box */}
             <div className="my-24 flex lg:w-[40%] flex-col gap-10">
               <h1 className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-4xl font-semibold lg:w-[70%] ">
                 Our Mission
@@ -133,32 +123,22 @@ const About = () => {
         </div>
       </section>
 
-      {/* section 4 */}
       <StatsComponent />
-
-      {/* section 5 */}
-      <section className="mx-auto p-2 flex flex-col items-center justify-between gap-5 mb-[140px]">
+      <section className="mx-auto mt-20 flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-white">
         <LearningGrid />
         <ContactFormSection />
-
-        <div className=" mb-16 mt-3">
-          <h2 className="text-center text-5xl md:text-4xl font-semibold mt-8 text-richblack-5 mb-5">
-            <p />
-            Go Through <HighlightText text={"Reviews"} /> Of Previous Students
-            To{" "}
-            <span className="bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] bg-clip-text text-4xl  font-semibold text-transparent lg:w-[70%]">
-              Make An
-              <br />
-              Informed Decision
-            </span>
-          </h2>
-          <div>
-            <RatingSlider />
-          </div>
-        </div>
       </section>
 
-      <section></section>
+      <div className="mb-16 mt-3 ">
+        <h2 className=" text-center text-4xl md:text-3xl font-semibold mt-8 text-richblack-5 mb-0">
+          Go Through <HighlightText text={"Reviews"} /> Of Previous Students To{" "}
+          <br />
+          <HighlightText1 text={"Make An Informed Decision"} />
+        </h2>
+        <div className="mt-8">
+          <RatingSlider />
+        </div>
+      </div>
     </div>
   );
 };

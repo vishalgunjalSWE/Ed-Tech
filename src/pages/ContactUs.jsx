@@ -3,6 +3,7 @@ import ContactUsForm from "../Components/contactUs/ContactUsForm";
 import RatingSlider from "../Components/core/Ratings/RatingSlider";
 import ReviewSlider from "../Components/common/ReviewSlider";
 import HighlightText from "../Components/core/HomePage/HighlightText";
+import HighlightText1 from "../Components/core/HomePage/HighlightText1";
 
 const ContactUs = () => {
   return (
@@ -93,17 +94,13 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className=" mb-16 mt-3">
-        <h2 className="text-center text-5xl md:text-4xl font-semibold mt-8 text-richblack-5 mb-5">
-          <p />
+      <div className="mb-16 mt-3 ">
+        <h2 className=" text-center text-4xl md:text-3xl font-semibold mt-8 text-richblack-5 mb-0">
           Go Through <HighlightText text={"Reviews"} /> Of Previous Students To{" "}
-          <span className="bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] bg-clip-text text-4xl  font-semibold text-transparent lg:w-[70%]">
-            Make An
-            <br />
-            Informed Decision
-          </span>
+          <br />
+          <HighlightText1 text={"Make An Informed Decision"} />
         </h2>
-        <div>
+        <div className="mt-8">
           <RatingSlider />
         </div>
       </div>
