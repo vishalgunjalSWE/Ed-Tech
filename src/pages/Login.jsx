@@ -47,6 +47,10 @@ function Login() {
             <p className="text-2xl font-extrabold text-richblack-5 flex items-center">
               Take a Demo &nbsp; <BsLightningChargeFill size={20} />
             </p>
+            <p className="text-2xl font-extrabold text-richblack-5 flex items-center">
+              This is only for recruiters &nbsp;{" "}
+              <BsLightningChargeFill size={20} />
+            </p>
             <div>
               <button
                 onClick={() => {
@@ -61,7 +65,7 @@ function Login() {
             <div>
               <button
                 onClick={() => {
-                  dispatch(login("demouser@gmail.com", "123", navigate));
+                  dispatch(login("demouser1@gmail.com", "123", navigate));
                 }}
                 className="bg-yellow-100 font-semibold text-richblack-900 px-4 py-2 rounded-md flex"
               >

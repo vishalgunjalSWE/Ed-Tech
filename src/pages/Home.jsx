@@ -174,13 +174,16 @@ function Home() {
           <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
             <div className="lg:h-[150px]"></div>
             <div className="flex flex-row gap-7 text-white lg:mt-8">
-              <CTAButton active={true} linkto={"/signup"}>
+              <CTAButton
+                active={true}
+                linkto={"http://localhost:3000/catalog/Devops"}
+              >
                 <div className="flex items-center gap-2">
                   Explore Full Catalog
                   <FaArrowRight />
                 </div>
               </CTAButton>
-              <CTAButton active={false} linkto={"/login"}>
+              <CTAButton active={false} linkto={"/signup"}>
                 Learn More
               </CTAButton>
             </div>
