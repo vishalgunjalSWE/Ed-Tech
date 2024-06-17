@@ -213,7 +213,7 @@ function Login() {
                     whileHover="hover"
                     whileTap="tap"
                     onClick={() => {
-                      dispatch(login("demouser@gmail.com", "123", navigate));
+                      dispatch(login("demovishal@gmail.com", "123", navigate));
                     }}
                     className="bg-yellow-100 font-semibold mt-1 mb-1 text-richblack-900 px-4 py-2 rounded-md flex" // Reduced top margin
                   >
