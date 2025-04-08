@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 Entity Relationship Diagram (ERD) for StudyNotion:
-User:
+User: 
 
 Attributes: UserID (Primary Key), Username, Email, Password, Role
 Relationships:
